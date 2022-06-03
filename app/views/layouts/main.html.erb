@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <% unless Rails.env.development? %>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-129127786-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-129127786-1');
+    </script>
+  <% end %>
+  <title><%= @title || "Haaby Real Estate" %></title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="keywords" content="Fargo, Fargo ND, Fargo North Dakota, Fargo-Moorhead, Fargo area, FM area, F-M area, West Fargo, West Fargo ND, West Fargo North Dakota, Moorhead, Moorhead MN, Moorhead Minnesota, Glyndon, Kindred, Horace, Harwood, Mapleton, Dilworth, Reile’s Acres, Frontier, Oxbow, Hickson, Argusville, Roseau, Roseau area, Roseau MN, Roseau Minnesota, Badger, Greenbush, Warroad, Wannaska, Malung, Salol, Pencer, Fox, Strathcona, Pinecreek, Skime, Realtor, realtors, real estate, real estate companies, real estate firms, real estate brokerages, real estate broker, real estate brokers, real estate agent, real estate agents, real estate agencies, realty, homes, homes for sale, listings, listings for sale, best real estate agent, best real estate agents, best realtor, find a realtor, how to find a realtor, how to find a real estate broker, top real estate agents, real estate agent listings cost of selling your home, home selling tips, house selling tips, how to sell your home, marketing your home, sell home fast, sell my home fast, selling a home, selling house fast, selling your home fast, staging your home to sell tips for selling your home, ways to sell your house, selling your home ,big houses for sale, buy home, buying a home, cheap houses for sale, find real estate, find real estate for sale, home buying, home buying tips, house on sale, house 4 sale, how to buy a home, tips for home buyers, when to buy a home, home buyers, houses on sale, real estate listing, real estate listings, condo for sale, condos for sale, townhouse for sale, townhouses for sale, town house for sale, town houses for sale, twinhome for sale, twinhomes for sale, twin home for sale, twin homes for sale, townhome for sale, townhomes for sale, town home for sale, town homes for sale, mls, mls listings, mls real estate listings, multiple listing service, real estate listing MLS, list of real estate agents, first time home buyer, first time home buyer programs, first time home buyers, first time home buyers programs, first time home buyer tips, first home buyer tips, first time homebuyer, first time homebuyer programs, first time homebuyers, first time homebuyers programs, first time homebuyer tips, first homebuyer tips, first-time home buyer, first-time homebuyer programs, first-time home buyers, first=time home buyers programs, first-time home buyer tips, first-time buyer tips, first-time homebuyer, first-time homebuyer programs, first-time homebuyers, first-time homebuyers programs, first-time homebuyer tips, Steve Haaby, Steven Haaby, Steve C Haaby, Steven C Haaby, Steve Curtis Haaby, Steven Curtis Haaby, Steve Haaby broker, Steve Haaby realtor, Steve Haaby agent, Steve Haaby real estate, Steve Haaby real estate agent, Steve Haaby Fargo realtor, Steve Haaby Roseau realtor, Steve Haaby Fargo real estate, Steve Haaby Roseau real estate, Steve Haaby Haaby Real Estate, Josie Wojahn, Josie R Wojahn, Josie Renae Wojahn, Josie Muirhead, Josie R Muirhead, Josie Renae Muirhead, Josie Wojahn realtor, Josie Muirhead realtor, Josie Wojahn agent, Josie Muirhead agent, Josie Wojahn Roseau realtor, Josie Muirhead Roseau realtor, Josie Wojahn Roseau agent, Josie Muirhead Roseau agent, Josie Wojahn real estate, Josie Muirhead real estate, Josie Wojahn Roseau real estate, Josie Muirhead Roseau real estate, Josie Wojahn Haaby Real Estate, Josie Muirhead Haaby Real Estate, Chris Bernard, Christian Bernard, Chris L Bernard, Christian L Bernard, Chris Luke Bernard, Christian Luke Bernard, Chris Bernard realtor, Chris Bernard agent, Chris Bernard real estate, Chris Bernard real estate agent, Chris Bernard Fargo realtor, Chris Bernard Fargo real estate, Chris Bernard Haaby Real Estate"
+  >
+  <!-- Start of Async Drift Code -->
+<script>
+"use strict";
+
+!function() {
+  var t = window.driftt = window.drift = window.driftt || [];
+  if (!t.init) {
+    if (t.invoked) return void (window.console && console.error && console.error("Drift snippet included twice."));
+    t.invoked = !0, t.methods = [ "identify", "config", "track", "reset", "debug", "show", "ping", "page", "hide", "off", "on" ],
+    t.factory = function(e) {
+      return function() {
+        var n = Array.prototype.slice.call(arguments);
+        return n.unshift(e), t.push(n), t;
+      };
+    }, t.methods.forEach(function(e) {
+      t[e] = t.factory(e);
+    }), t.load = function(t) {
+      var e = 3e5, n = Math.ceil(new Date() / e) * e, o = document.createElement("script");
+      o.type = "text/javascript", o.async = !0, o.crossorigin = "anonymous", o.src = "https://js.driftt.com/include/" + n + "/" + t + ".js";
+      var i = document.getElementsByTagName("script")[0];
+      i.parentNode.insertBefore(o, i);
+    };
+  }
+}();
+drift.SNIPPET_VERSION = '0.3.1';
+drift.load('8phbr27336hu');
+</script>
+<!-- End of Async Drift Code -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+  <%= yield :head %>
+  <%= favicon_link_tag "Haabyicon.jpg" %>
+  <%= csrf_meta_tags %>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+</head>
+<body>
+  <div class="container-fluid">
+    <div class="row my-5">
+      <div class="col-1 col-sm-1 col-md-1 col-lg-1"></div>
+      <div class="col-2 col-sm-2 col-md-2 col-lg-2 stevestuff">
+        <img class="steve-image" src="Steve Haaby 5x7.jpg">
+        <h5 class="top-h5 my-0">Steve Haaby</h5>
+        <p class="realtor top-text my-0">Broker</p>
+        <!-- <div class="dropdown-contact-info">
+          <button class="btn dropdown-toggle contact-dropdown" type="button" id="dropdownContactMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Contact Me
+          </button>
+          <div class="dropdown-menu dropdown-contact-menu" aria-labelledby="dropdownContactMenuButton">
+            <span class="dropsize dropdown-item text-center">701.306.7401</span>
+            <span class="dropsize dropdown-item text-center" id="steveemail">SteveHaaby@HaabyRealEstate.com</span>
+          </div>
+        </div> -->
+        <div class="stevedropdown">
+          <button class="stevedropbutton top-h5">Contact Me
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="steve-dropdown-content stevestuff">
+            <span class="dropsize drop-text">701.306.7401</span>
+            <div class="copying">
+              <span id="smail" class="dropsize drop-text">SteveHaaby@HaabyRealEstate.com</span>
+              <i id="cpybtn" class="far fa-copy"></i>
+            </div>
+          </div>
+      </div>
+    </div>
+      <div class="col-5 col-sm-5 col-md-5 col-lg-5">
+        <div class="logo-container">
+          <img class="haaby-logo" src="haabylogo.jpeg">
+        </div>
+        <div class="row pt-4">
+          <div class="col-md-4"></div>
+          <div class="col-4 col-md-1 padding-to-center"><a href="https://www.facebook.com/HaabyRealEstate/"><i class=" fb fab fa-facebook fa-3x social-spot"></i></a></div>
+          <div class="col-4 col-md-2"><a href="https://twitter.com/haabyrealestate?lang=en"><i class="tw fab fa-twitter fa-3x social-spot"></i></a></div>
+          <div class="col-4 col-md-1 linkedin"><a href="https://www.linkedin.com/in/steve-haaby-ba117234"><i class="lk fab fa-linkedin fa-3x social-spot"></i></a></div>
+          <div class="col-md-4"></div>
+        </div>
+      </div>
+      <div class="col-2 col-sm-2 col-md-2 col-lg-2 stevestuff">
+        <img class="steve-image" src="Chris Bernard 5x7.jpg">
+        <h5 class="top-h5 my-0">Chris Bernard</h5>
+        <p class="realtor my-0">Realtor</p>
+        <div class="stevedropdown">
+          <button class="stevedropbutton">Contact Me
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="steve-dropdown-content stevestuff">
+            <span class="dropsize drop-text">218.770.0604</span>
+            <div class="copying">
+              <span id="cmail" class="dropsize drop-text">ChrisBernard@HaabyRealEstate.com</span>
+              <i id="cpybtn2" class="far fa-copy"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-2 col-sm-2 col-md-2 col-lg-2 stevestuff">
+        <img class="steve-image" src="Josie Wojahn 5x7.jpg">
+        <h5 class="top-h5 my-0">Josie Wojahn</h5>
+        <p class="realtor top-text my-0">Realtor</p>
+        <div class="josiedropdown">
+          <button class="josiedropbutton">Contact Me
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="josie-dropdown-content stevestuff">
+            <span class="dropsize drop-text">218.242.5510</span>
+            <div class="copying">
+              <span id="jmail" class="dropsize drop-text">JosieWojahn@HaabyRealEstate.com</span>
+              <i id="cpybtn3" class="far fa-copy"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="bar">
+        <div class="mynav">
+          <div class="mydropdown">
+            <button class="mydropbutton">Our Listings
+              <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="my-dropdown-content">
+              <a href="/">Fargo-Moorhead Area</a>
+              <a href="roseau-area">Roseau Area</a>
+            </div>
+          </div>
+          <a href="http://www.FMOpenHouses.com" target="_blank">Open Houses</a>
+          <div class="mydropdown">
+            <button class="mydropbutton">Property Search
+              <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="my-dropdown-content">
+              <a href="property-search-fargo-moorhead">Fargo Area Search</a>
+              <a href="property-search-roseau">Roseau Area Search</a>
+            </div>
+          </div>
+          <div class="mydropdown">
+            <button class="aboutusbtn mydropbutton" onclick="window.location.href='aboutus'">About Us
+              <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="my-dropdown-content">
+              <a href="about-steve">About Steve</a>
+              <a href="about-josie">About Josie</a>
+              <a href="about-chris">About Chris</a>
+            </div>
+          </div>
+          <a href="referralpartners">Referral Partners</a>
+          <a href="loyaltyprogram">Loyalty Program</a>
+          <a href="contactus">Contact Us</a>
+        </div>
+      </div>
+    </div>
+    <!-- <div class="row">
+      <nav class="navbar navbar-expand custom-nav">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <ul class="navbar-nav custom-nav">
+            <li class="nav-item dropdown pr-3">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Our Listings
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="/">Fargo-Moorhead Area</a>
+                <a class="dropdown-item" href="roseau-area">Roseau Area</a>
+              </div>
+            </li>
+            <li>
+              <a class="nav-item nav-link pr-3" href="http://www.FMOpenHouses.com" target="_blank">Open Houses</a>
+            </li>
+            <li class="nav-item dropdown pr-3">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Property Search
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="property-search-fargo-moorhead">Fargo-Moorhead Search</a>
+                <a class="dropdown-item" href="property-search-roseau">Roseau Search</a>
+              </div>
+            </li>
+            <li class="pr-3">
+              <a class="nav-item nav-link" href="aboutus">About Us</a>
+            </li>
+            <li class="pr-3">
+              <a class="nav-item nav-link" href="referralpartners">Referral Partners</a>
+            </li>
+            <li class="pr-3">
+              <a class="nav-item nav-link" href="loyaltyprogram">Loyalty Program</a>
+            </li>
+            <li class="pr-3">
+              <a class="nav-item nav-link" href="contactus">Contact Us</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div> -->
+
+    <%= yield %>
+    <div class="row mt-5">
+      <div class="form-wrapper">
+        <div class="alert alert-info text-center form-custom">
+          <h1>Contact Haaby Real Estate</h1>
+          <%= form_tag '/mail' do %>
+          <div class="form-row form-group">
+            <div class="form-name">
+              <%= label_tag :name, "First and Last Name" %>
+              <%= text_field_tag :name, "", class: "form-control", placeholder: "First and Last Name" %>
+            </div>
+          </div>
+          <div class="form-row form-group">
+            <div class="form-email">
+              <%= label_tag :email, "Email" %>
+              <%= email_field_tag :email, "", class: "form-control", placeholder: "email@example.com" %>
+              </div>
+          </div>
+          <div class="form-row form-group">
+            <div class="form-phone">
+              <%= label_tag :phone, "Phone Number" %>
+              <%= telephone_field_tag :phone, "", class: "form-control", placeholder: "xxx-xxx-xxxx" %>
+            </div>
+          </div>
+          <div class="form-row form-group">
+            <div class="form-checks row pl-3">
+              <div>
+                <%= check_box_tag :buying %>
+                <%= label_tag :buying, "Buying", class: "pr-3" %>
+              </div>
+              <div>
+                <%= check_box_tag :selling %>
+                <%= label_tag :selling, "Selling", class: "pr-3" %>
+              </div>
+              <div>
+                <%= check_box_tag :mortgage %>
+                <%= label_tag :mortgage, "Mortgage", class: "pr-3" %>
+              </div>
+              <div>
+                <%= check_box_tag :newconstruction %>
+                <%= label_tag :newconstruction, "New Construction", class: "pr-3" %>
+              </div>
+              <div>
+                <%= check_box_tag :insurance %>
+                <%= label_tag :insurance, "Insurance", class: "pr-3" %>
+              </div>
+              <div>
+                <%= check_box_tag :other %>
+                <%= label_tag :other, "Other" %>
+              </div>
+            </div>
+          </div>
+          <div class="form-row form-group">
+            <div class="form-comments">
+              <%= label_tag :comments, "Comments" %>
+              <%= text_area_tag :comments, "", class: "form-control" %>
+            </div>
+          </div>
+          <div class="form-row form-group">
+            <div class="form-submit">
+              <%= submit_tag "SUBMIT", class: "form-control" %>
+            </div>
+          </div>
+          <% end %>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="footer">
+        <img src="webFooter.jpg" class="custom-img">
+      </div>
+    </div>
+  </div>
+  <script>
+    document.getElementById("cpybtn").addEventListener("click", copy_steve);
+    document.getElementById("cpybtn2").addEventListener("click", copy_chris);
+    document.getElementById("cpybtn3").addEventListener("click", copy_josie);
+
+    function copy_steve() {
+        var copyText = document.getElementById("smail");
+        var textArea = document.createElement("textarea");
+        textArea.value = copyText.textContent;
+        document.body.appendChild(textArea);
+        textArea.select();
+        document.execCommand("Copy");
+        textArea.remove();
+    }
+
+    function copy_chris() {
+        var copyText = document.getElementById("cmail");
+        var textArea = document.createElement("textarea");
+        textArea.value = copyText.textContent;
+        document.body.appendChild(textArea);
+        textArea.select();
+        document.execCommand("Copy");
+        textArea.remove();
+    }
+
+    function copy_josie() {
+        var copyText = document.getElementById("jmail");
+        var textArea = document.createElement("textarea");
+        textArea.value = copyText.textContent;
+        document.body.appendChild(textArea);
+        textArea.select();
+        document.execCommand("Copy");
+        textArea.remove();
+    }
+  </script>
+</body>
+</html>
